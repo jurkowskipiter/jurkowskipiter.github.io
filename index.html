@@ -1,1 +1,108 @@
-<h1>Moja strona</h1>
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam - Usługi stolarskie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans antialiased">
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white p-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Adam</h1>
+            <nav class="space-x-6">
+                <a href="#about" class="hover:text-gray-300">O mnie</a>
+                <a href="#services" class="hover:text-gray-300">Usługi</a>
+                <a href="#portfolio" class="hover:text-gray-300">Portfolio</a>
+                <a href="#contact" class="hover:text-gray-300">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-96 flex items-center justify-center text-center bg-gray-800"
+        style="background-image: url('https://via.placeholder.com/1200x600');">
+        <div class="text-white px-4 py-12">
+            <h2 class="text-4xl font-extrabold">Twój profesjonalny stolarz</h2>
+            <p class="text-lg mt-4">Specjalizuję się w wysokiej jakości usługach stolarskich. Zaufaj mojej precyzji i doświadczeniu!</p>
+            <a href="#contact"
+                class="mt-6 inline-block px-6 py-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition">Skontaktuj się
+                ze mną</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-gray-800">O mnie</h2>
+            <p class="mt-4 text-lg text-gray-600">Jestem doświadczonym stolarzem z pasją do tworzenia wyjątkowych mebli i konstrukcji
+                drewnianych. Zajmuję się zarówno projektami na zamówienie, jak i gotowymi rozwiązaniami.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-gray-800">Usługi</h2>
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800">Meble na zamówienie</h3>
+                    <p class="mt-4 text-gray-600">Tworzę meble dopasowane do indywidualnych potrzeb klientów. Wysoka jakość
+                        wykonania.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800">Renowacja mebli</h3>
+                    <p class="mt-4 text-gray-600">Oferuję profesjonalną renowację mebli drewnianych, przywracając im
+                        dawny blask.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800">Projekty na zamówienie</h3>
+                    <p class="mt-4 text-gray-600">Projektuję meble na specjalne zamówienie, dopasowane do Twoich
+                        potrzeb.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-gray-800">Portfolio</h2>
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="bg-gray-200 rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200" alt="Projekt 1" class="w-full h-48 object-cover">
+                </div>
+                <div class="bg-gray-200 rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200" alt="Projekt 2" class="w-full h-48 object-cover">
+                </div>
+                <div class="bg-gray-200 rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200" alt="Projekt 3" class="w-full h-48 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-gray-800">Kontakt</h2>
+            <p class="mt-4 text-lg text-gray-600">Skontaktuj się ze mną, aby omówić szczegóły swojego projektu!</p>
+            <form class="mt-8 space-y-4 max-w-lg mx-auto">
+                <input type="text" name="name" placeholder="Twoje imię" class="w-full p-4 bg-white border border-gray-300 rounded-lg">
+                <input type="email" name="email" placeholder="Twój email" class="w-full p-4 bg-white border border-gray-300 rounded-lg">
+                <textarea name="message" placeholder="Wiadomość" rows="4" class="w-full p-4 bg-white border border-gray-300 rounded-lg"></textarea>
+                <button type="submit" class="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Wyślij wiadomość</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-600 text-white text-center py-6">
+        <p>&copy; 2025 Stolarz | Wszystkie prawa zastrzeżone</p>
+    </footer>
+</body>
+
+</html>
